@@ -41,4 +41,4 @@ A basic food delivery mobile application developed using **Java** in **Android S
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/food-delivery-app.git
+   git clone https://github.com/dipeshmhrzn/Basic-Food-Delivery-App.git
