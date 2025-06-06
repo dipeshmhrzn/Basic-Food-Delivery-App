@@ -1,0 +1,162 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_cyclone_cart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/cyclone_background">
+
+            <ImageView
+                android:id="@+id/image_cart_logo"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_cart"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/text_cyclone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_cart_logo"
+                android:layout_centerHorizontal="true"
+                android:text="Cyclone Cart"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_login"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_cyclone_cart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/cyclone_sign_in"
+            android:elevation="15dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/text_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Sign In"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edittext_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_sign_in"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#70dbdb"
+                android:hint="Email / Mobile No."
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/edittext_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edittext_number"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#70dbdb"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/text_forgot_pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edittext_password"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="right"
+                android:text="Forget password?"
+                android:textColor="@color/cyclone_background"
+                android:textSize="14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_forgot_pw"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:backgroundTint="@color/cyclone_background"
+                android:text="Login"
+                android:textAllCaps="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_create_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_login"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/text_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Not Registered? Create an account"
+                android:textColor="@color/cyclone_background"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_terms"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/cyclone_background">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight=".5"
+                android:gravity="end|center_vertical"
+                android:text="Privacy policy"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight=".5"
+                android:background="@color/cyclone_background"
+                android:gravity="start|center_vertical"
+                android:text="Terms and Conditions"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
